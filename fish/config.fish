@@ -20,6 +20,9 @@ fish_add_path /usr/local/go/bin
 set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 fish_add_path $PNPM_HOME
 
+alias rebuild-sietch='cd /home/nilay/opensource/sietch && make install-local'
 # Optional: Initialize Starship prompt (uncomment if you use Starship)
 # starship init fish | source
+
+
 set -gx PATH /snap/bin $PATH
