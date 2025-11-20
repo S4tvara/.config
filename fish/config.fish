@@ -3,6 +3,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# Global Obsidian Vault Path
+set -gx OBSIDIAN_VAULT "$HOME/Documents/Obsidian Vault"
+
 # Add Spicetify to PATH
 fish_add_path /home/nilay/.spicetify
 
@@ -26,3 +29,5 @@ alias rebuild-sietch='cd /home/nilay/opensource/sietch && make install-local'
 
 
 set -gx PATH /snap/bin $PATH
+set -gx PATH $HOME/.cargo/bin $PATH
+
